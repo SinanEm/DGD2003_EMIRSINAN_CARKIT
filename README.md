@@ -1,88 +1,93 @@
 # DGD2003_EMIRSINAN_CARKIT
-Game Title: Detective Mouse: The Lost Item Case 🐭🔎
-Genre: Adventure / Puzzle / Mystery
+Game Title: Detective Mouse: The Lost Item Case 
+Genre: First-Person Adventure / Mystery / Puzzle
 Platform: PC (Unity)
-Target Audience: 12+ (School project appropriate)
-Game Perspective: 3rd Person / Top-down (slightly isometric)
+Target Audience: 12+
+Game Perspective: First-Person
 
 1. Concept / High-Level Overview
 
-Detective Mouse is an adventure game set on a single-floor school level. The player controls a dressed, anthropomorphic mouse who must find a missing item belonging to a student. The player explores classrooms and corridors, talks to NPCs, and completes side quests to collect clues and solve the mystery.
+Detective Mouse is an FPS exploration game set on a single-floor school map. Players control a dressed, anthropomorphic mouse from a first-person perspective. The objective is to find a missing item by exploring classrooms, corridors, and interacting with NPCs.
 
 Core Pillars:
 
-Mystery and exploration
+First-person exploration and clue-finding
 
-Side quests for interaction and world-building
-
-Single-floor school map
+Side quests integrated in the same map
 
 Humorous and anthropomorphic mouse character
 
+Single-floor school fully utilized
+
 2. Gameplay Mechanics
-2.1 Player Controls
+2.1 Player Controls (FPS)
 Control	Action
 W/A/S/D	Move
+Mouse Look	Look around / aim
+Left Click	Interact / pick up item
+E	Examine object / pick up clue
+F	Talk to NPC / trigger dialogue
 Space	Jump / small obstacle vault
-E	Inspect / pick up items
-F	Talk to NPCs
+Shift	Sprint
 2.2 Core Gameplay Loop
 
-Talk to NPCs → gather clues
+Explore corridors and classrooms → first-person perspective
 
-Investigate items / rooms → progress main and side quests
+Talk to NPCs → collect clues
 
-Complete side quests → unlock extra clues and rewards
+Investigate objects → search desks, lockers, and hidden spots
 
-Solve main quest → find the lost item
+Complete side quests → unlock more clues and secret areas
+
+Solve main quest → find the missing item
 
 2.3 Main Mechanics
 
-Clue System: Every room or locker may contain clues. Players must follow them in order to progress.
+Clue System: Objects can be examined in FPS view; highlighting interactive objects with a small crosshair icon.
 
 Side Quests:
 
-Find a lost pen
+Find a lost pen on the floor
 
-Carry books for a student
+Deliver books to a student
 
-Deliver a snack from the cafeteria
+Retrieve a snack from the cafeteria
 
-Clean a messy classroom
+Clean a messy classroom (optional mini-objective)
 
-Stealth / Avoidance: Some NPCs (teachers) patrol the corridors. If caught, the player loses time but not clues.
+Stealth / Avoidance: Teachers or NPCs patrol; player must avoid detection (optional timer penalty).
 
 2.4 Progression / Rewards
 
-Completing main quest → win the game
+Completing main quest → game ends successfully
 
-Completing side quests → gain additional clues and access to locked areas
+Completing side quests → gain additional clues, unlock secret lockers
 
-Interacting with NPCs → enhances world immersion
+NPC interactions → world feels alive, can reveal hints or shortcuts
 
 3. Narrative
 3.1 Story
 
-A student loses an important item (phone, USB drive, or key).
-The player, a dressed detective mouse, is tasked with finding it within the single-floor school.
+A student loses an important item.
+The player, a dressed detective mouse, is assigned to find the item in the school. The first-person perspective makes the player feel small and “mouse-like” in the environment, giving humor and immersion.
 
 3.2 Characters
 Character	Description	Role
-Detective Mouse	Main character, anthropomorphic, smart and curious	Player
-Item Owner Student	Student who lost the item	Main quest trigger
+Detective Mouse	Main character	Player
+Item Owner Student	Lost the item	Main quest trigger
 NPC Students	Provide information and side quests	Side quests
 Teacher	Patrols corridors	Stealth obstacle
 3.3 Key Events / Plot Flow
 
-Player receives the quest from the item owner
+Player receives main quest from item owner
 
-Explores classrooms and corridors
+Explores FPS corridors and classrooms
 
-Completes side quests to gather clues
+Completes side quests for additional clues
 
-Finds the lost item in the correct location
+Follows clues to find missing item
 
-Twist: The item may have been hidden by someone → player can accuse wrong NPC for an alternative ending
+Twist: Item may have been hidden → player can accuse wrong NPC
 
 4. Technical Specifications
 4.1 Game Engine
@@ -91,56 +96,51 @@ Unity 2022+
 
 C# scripting
 
+Standard FPS controller (Unity Character Controller or custom)
+
 4.2 Platform
 
 PC (Windows)
 
 4.3 Assets
 
-3D Models: Mouse character, students, teachers, classroom objects
+3D Models: Mouse character (hands visible in first-person), NPCs, desks, lockers
 
-Environment: Single-floor school, classrooms, corridors, cafeteria, lockers
+Environment: Single-floor school with classrooms, corridors, lockers, 
 
-UI: Quest log, clue panel, dialogue boxes
+UI: Crosshair, quest log, clue panel, dialogue UI
 
 4.4 Core Systems
 
-NPC Dialogue System → simple interaction via F key
+FPS Interaction System → raycast-based object interactions
 
-Inventory / Collectibles → items and clues
+Inventory / Clues → collectables in first-person
 
 Quest System → tracks main and side quests
 
-Mini-map / Corridor Map → guides player to clue locations
+NPC Dialogue → triggered by proximity + F key
 
-5. Art / Audio
 
-Art Style: Cartoonish but school details realistic
 
-Audio:
-
-School ambiance (footsteps, chatter, bells)
-
-Side quest and main quest sound cues
-
-Humorous mouse sounds (reactions, steps)
-
-6. Level Design
+5. Level Design
 
 Single-floor school
 
-Classrooms: each room has a clue or side quest
+Classrooms: each room has clues or side quests
 
-Corridors: movement area and hidden clues
+Corridors: movement space + interactive objects
 
-Lockers: hidden items / keys
+Lockers: hidden items, optional exploration
 
-Cafeteria: side quests and additional clues
 
-7. Potential Twists / Replayability
 
-Lost item can appear in different locations → replayable experience
+FPS twist:
+The player feels small relative to human NPCs → emphasizes mouse perspective
+
+6. Potential Twists / Replayability
+
+Lost item location can vary → different playthroughs
 
 Side quests can be completed in different orders → clue order changes
 
-Player can accuse wrong NPC → alternative ending
+Accusing wrong NPC → alternative ending
